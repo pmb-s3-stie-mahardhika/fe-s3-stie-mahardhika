@@ -10,6 +10,8 @@ import Vision from "@/components/academics/Vision";
 import Competence from "@/components/academics/Competence";
 import Curriculum from "@/components/academics/Curriculum";
 import Method from "@/components/academics/Method";
+import Schedule from "@/components/academics/Schedule";
+import Slogan from "@/components/academics/Slogan";
 import ScrollToTop from "@/components/global/ScrollToTop";
 
 import pic_1 from "@/assets/components/academics/pic_1.webp";
@@ -42,11 +44,13 @@ const AcademicPage = () => {
         <div className="w-full overflow-hidden">
           <img src={pic_1} alt="Picture" className="w-full h-auto" />
         </div>
-        <Curriculum />
+        <Schedule />
         <Method />
         <div className="w-full overflow-hidden">
           <img src={pic_2} alt="Picture" className="w-full h-auto" />
-        </div>
+        </div> 
+        <Curriculum />
+        <Slogan />
         <ScrollToTop />
       </main>
       <Footer />

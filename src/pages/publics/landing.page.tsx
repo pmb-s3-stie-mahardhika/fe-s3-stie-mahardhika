@@ -1,7 +1,7 @@
 import Header from "@/components/global/Header";
 import Hero from "@/components/landing/Hero";
 import Department from "@/components/landing/Department";
-import Curriculum from "@/components/landing/Curriculum";
+import Schedule from "@/components/landing/Schedule";
 import Career from "@/components/landing/Career";
 import Testimonials from "@/components/landing/Testimonials";
 import Cost from "@/components/landing/Cost";
@@ -13,7 +13,6 @@ import { useEffect, useState } from "react";
 import BackgroundImage1 from "@/assets/foto/VICL0820.webp";
 import pic_1 from "@/assets/components/landing/pic_1.webp";
 import pic_2 from "@/assets/components/landing/pic_2.webp";
-import pic_3 from "@/assets/components/landing/pic_3.webp";
 import pic_4 from "@/assets/components/landing/pic_4.webp";
 import ScrollToTop from "@/components/global/ScrollToTop";
 
@@ -40,10 +39,10 @@ const Landing = () => {
       <main>
         <Hero />
         <Department />
+        <Schedule />
         <div className="w-full overflow-hidden">
           <img src={pic_1} alt="Picture" className="w-full h-auto" />
         </div>
-        <Curriculum />
         <div className="w-full overflow-hidden">
           <img src={pic_4} alt="Picture" className="w-full h-auto" />
         </div>
@@ -55,9 +54,6 @@ const Landing = () => {
         <Cost />
         <Quotes />
         <Footer />
-        <div className="w-full overflow-hidden">
-          <img src={pic_3} alt="Picture" className="w-full h-auto" />
-        </div>
         <ScrollToTop />
       </main>
     </div>

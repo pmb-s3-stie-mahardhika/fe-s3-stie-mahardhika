@@ -1,0 +1,72 @@
+{
+  "landing_schedule": {
+    "title": "JADWAL PERKULIAHAN",
+    "items": [
+      {
+        "name": "Babun Suharto, SE, MM",
+        "course": "Strategic Thinking Berkelanjutan",
+        "descriptions": [
+          "Mata kuliah ini memberikan wawasan stratejik tentang konseptualisasi dan mengelola kompleksitas, ketidakpastian, serta perubahan lingkungan yang cepat. Pembahasan melibatkan analisis foresight, dynamic capability, perspektif ambidextrous strategy, serta evolusi dalam pengambilan keputusan tingkat korporat.",
+          "Para eksekutif dilatih untuk membangun pola pikir visioner, adaptif, dan authentik, serta mampu merumuskan grand strategy berbasis resiko dan keberlanjutan. Pendekatan yang digunakan analitik komparatif, reflektif, dan berbasis studi kasus tingkat global untuk memperlihatkan keunggulan kompetitif analitik interaktif."
+        ]
+      },
+      {
+        "name": "Purwanto, SE, MM",
+        "course": "Desain Riset Stratejik",
+        "descriptions": [
+          "Mata kuliah ini membahas perancangan riset tingkat doktoral yang berorientasi pada kontribusi teoritis dan implikasi stratejik. Pembahasan meliputi konstruksi model konseptual, pengembangan hipotesis berjenjang, dan teknik pemilihan metodologi (kuantitatif, kualitatif, mix-method), serta strategi pengujian empiris.",
+          "Para eksekutif dilatih pada keahlian merancang disain penelitian yang elegan, meminimalkan grey zone, serta validitas internal dan eksternal disain penelitian. Mahasiswa difasilitasi untuk menyusun blueprint penelitian yang rigor, sistematik, dan berdaya guna bagi intervensi riset."
+        ]
+      },
+      {
+        "name": "Amelia, SE, MM",
+        "course": "Paradigma Inovasi Pemasaran",
+        "descriptions": [
+          "Mata kuliah ini mengkaji transformasi paradigmatik pemasaran dari transaksional menjadi pemasaran relasional, logocentric, hingga innovation-driven marketing. Dibahas pula konsep-konsep nilai pelanggan, co-creation strategy, dan the new marketing logic yang terpusat di era disrupsi, serta konteks pemasaran stratejik.",
+          "Para eksekutif didorong untuk menganalisis, paradoks, disonansi, dan membangun kerangka inovatif dalam pemasaran yang relevan dengan dinamika pasar dan disrupsi lingkungan bisnis, fokusnya bukan hanya pada praktik pemasaran, tetapi konstelasi dari pemasaran berbasis inovasi dan keunggulan kompetitif masa depan."
+        ]
+      },
+      {
+        "name": "Nugroho Wibowo, SE, MM.",
+        "course": "Filsafat Ilmu Inovasi Paradigma & Manajemen",
+        "descriptions": [
+          "Mata kuliah ini membahas landasan artologis, epistemologis, dan aksiologis dalam pengembangan ilmu manajemen sedari masa inovasi. Pembahasan diarahkan untuk memahami pergeseran paradigma, kontribusi pemikiran aliran neo-manajemen, dan dialektika ruang publik serta interpretasi dari pendekatan tersebut.",
+          "Fokus utama adalah bagaimana inovasi tidak hanya dipahami sebagai fenomena teknis, tetapi sebagai konstruksi paradigmatik yang merombong tatanan ilmu ontologik, kebijakan organisasi, dan perubahannya dalam manajemen.",
+          "Mahasiswa diharapkan mampu membangun sintesis teoretis baru serta merumuskan posisi filosofis pembaharuan dengan dalil logis dan argumentatif."
+        ]
+      },
+      {
+        "name": "Dr. Manik Kastiringsih, SE, MM.",
+        "course": "Digital Marketing/HR Innovation",
+        "descriptions": [
+          "Mata kuliah ini membawa integrasi strategi pemasaran digital dengan inovasi pengelolaan sumber daya manusia dalam konteks organisasi modern. Pembahasan memaparkan disrupsi pemasaran digital (platform, kanal, dan consumer journey), pemanfaatan data analitik dalam pengambilan keputusan pemasaran, serta praktik inovasi HR seperti digital talent management, employee experience, dan agile workforce.",
+          "Fokus utama adalah bagaimana sinergi marketing-HR mampu meningkatkan kinerja organisasi, engagement pelanggan, dan keunggulan kompetitif berbasis teknologi."
+        ]
+      },
+      {
+        "name": "Dr. Choirul Anam, SE, MM.",
+        "course": "Behavioral Neuroscience Innovation",
+        "descriptions": [
+          "Mata kuliah ini mengkaji dasar-dasar neurosains perilaku dan aplikasinya dalam inovasi bisnis dan pemasaran. Pembahasan meliputi pemahaman otak, emosi, pengambilan keputusan, persepsi nilai, serta respon otoriter/bawah sadar terhadap inovasi produk, merek, dan pengalaman pelanggan.",
+          "Mahasiswa diajak menelusuri bagaimana insight neurosains dapat digunakan untuk merancang strategi inovasi yang lebih human-centric, meningkatkan afeksi atau kepuasan, dan mendorong adopsi produk dan layanan baru."
+        ]
+      },
+      {
+        "name": "Dr. Nanang Sutyatmadireja, SH. MH.",
+        "course": "Creative & Ethical Branding Innovation/Bisnis",
+        "descriptions": [
+          "Mata kuliah ini menekankan pada pengembangan inovasi branding yang kreatif sekaligus berlandaskan etika bisnis. Topik meliputi penciptaan identitas merek, storytelling, desain pengalaman merek otentik, serta penciptaan nilai etis dan tanggung jawab sosial.",
+          "Selain aspek kreatif, mahasiswa juga mendalami isu etika seperti kejujuran komunikasi, keberlanjutan merek, tanggung jawab sosial, dan pelindungan budaya. Tujuannya agar inovasi branding tidak hanya menarik secara komersial, tetapi juga kredibel dan berkelanjutan."
+        ]
+      },
+      {
+        "name": "Dr. Wulansari Kardijanit, S.Sos, SE, MM.",
+        "course": "Academic Writing",
+        "descriptions": [
+          "Mata kuliah ini bertujuan mengembangkan kemampuan penulisan akademik mahasiswa pada level kualifikasi master. Materi mencakup struktur artikel jurnal, teknik penulisan dan sitasi, penyusunan argumen berbasis literatur, memformulasikan riset ke kebaruan, serta etika publikasi.",
+          "Mahasiswa dilatih menulis proposal riset, artikel jurnal, dan paper konferensi dengan standar akademik internasional targetnya adalah publikasi bereputasi di jurnal yang bereputasi."
+        ]
+      }
+    ]
+  }
+}

@@ -45,12 +45,9 @@ const Testimonials = () => {
   return (
     <section className="py-16 md:py-24 bg-linear-to-b from-white to-gray-200 shrink-0">
       <div className="container mx-auto px-4 md:px-20">
-        {/* Header */}
         <div className="mb-12">
           <TitleText>{t("testimonials.title")}</TitleText>
         </div>
-
-        {/* Grid Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {testimonialsData.map((testimonial, index) => (
             <TestimonialCard key={index} quote={testimonial.quote} avatar={testimonial.avatar} name={testimonial.name} title1={testimonial.title1} title2={testimonial.title2} />

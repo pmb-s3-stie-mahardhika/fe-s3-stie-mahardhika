@@ -7,10 +7,15 @@ import BackgroundImage1 from "@/assets/foto/VICL0820.webp";
 
 import Hero from "@/components/about/Hero";
 import About from "@/components/about/About";
-import Testimonials from "@/components/about/Testimonials";
+import AboutCards from "@/components/about/AboutCards";
 import Department from "@/components/about/Department";
 import OurPeople from "@/components/about/OurPeople";
+import Gallery from "@/components/about/Gallery";
 import ScrollToTop from "@/components/global/ScrollToTop";
+
+import pic_1 from "@/assets/components/about/pic_1.webp";
+import pic_2 from "@/assets/components/about/pic_2.webp";
+import pic_3 from "@/assets/components/about/pic_3.webp";
 
 const AboutPage = () => {
   const [isLoading, setIsLoading] = useState(!sessionStorage.getItem('hasVisited'));
@@ -35,8 +40,18 @@ const AboutPage = () => {
       <main>
         <Hero />
         <About />
-        <Testimonials />
+        <div className="w-full overflow-hidden">
+          <img src={pic_1} alt="Picture" className="w-full h-auto" />
+        </div>
+        <AboutCards />
+        <div className="w-full overflow-hidden">
+          <img src={pic_2} alt="Picture" className="w-full h-auto" />
+        </div>
         <OurPeople />
+        <Gallery />
+        <div className="w-full overflow-hidden">
+          <img src={pic_3} alt="Picture" className="w-full h-auto" />
+        </div>
         <Department />
         <ScrollToTop />
       </main>

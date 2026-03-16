@@ -19,7 +19,7 @@ const Form = () => {
   };
 
   return (
-    <section className="py-12 md:py-24 bg-[#EAECEE]">
+    <section className="py-12 md:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 md:px-20">
         <div className="flex flex-col items-center mb-8 md:mb-16">
           <TitleText>{t("apply.form.header")}</TitleText>

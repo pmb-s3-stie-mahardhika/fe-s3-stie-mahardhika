@@ -29,18 +29,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Bottom Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 md:mt-24">
-          {[0, 1, 2].map((idx) => (
-            <div key={idx} className="border-3 border-[#08C9EC] rounded-lg p-6 md:p-8 bg-white">
-              <h3 className="text-xl md:text-2xl font-extrabold text-gray-900 mb-6 md:mb-8" style={{ WebkitTextStroke: "1px #111827" }}>
-                {t(`about.cards.${idx}.title`)}
-              </h3>
-              <h4 className="font-bold text-gray-900 text-base mb-2">{t(`about.cards.${idx}.subtitle`)}</h4>
-              <p className="text-sm text-gray-600 leading-relaxed">{t(`about.cards.${idx}.description`)}</p>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

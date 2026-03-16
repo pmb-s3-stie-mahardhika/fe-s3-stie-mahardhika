@@ -11,6 +11,7 @@ import Certified from "@/components/international-support/Certified";
 import Sponsor from "@/components/international-support/Sponsor";
 
 import pic_1 from "@/assets/components/international-support/pic_1.webp";
+import pic_2 from "@/assets/components/international-support/pic_2.webp";
 import ScrollToTop from "@/components/global/ScrollToTop";
 
 const InternationalSupportPage = () => {
@@ -37,9 +38,12 @@ const InternationalSupportPage = () => {
         <Hero />
         <Title />
         <div className="w-full overflow-hidden">
-          <img src={pic_1} alt="Picture" className="w-full h-auto" />
+          <img src={pic_2} alt="Picture" className="w-full h-auto" />
         </div>
         <Certified />
+        <div className="w-full overflow-hidden">
+          <img src={pic_1} alt="Picture" className="w-full h-auto" />
+        </div>
         <Sponsor />
         <ScrollToTop />
       </main>

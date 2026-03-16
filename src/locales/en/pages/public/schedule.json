@@ -1,0 +1,72 @@
+{
+  "landing_schedule": {
+    "title": "CLASS SCHEDULE",
+    "items": [
+      {
+        "name": "Babun Suharto, SE, MM",
+        "course": "Sustainable Strategic Thinking",
+        "descriptions": [
+          "This course provides strategic insights into conceptualizing and managing complexity, uncertainty, and rapid environmental changes. Discussions involve foresight analysis, dynamic capabilities, ambidextrous strategy perspectives, and evolution in corporate-level decision-making.",
+          "Executives are trained to build a visionary, adaptive, and authentic mindset, as well as the ability to formulate risk-based and sustainability grand strategies. The approach uses comparative, reflective analytics, and case studies at the global level to demonstrate interactive analytical competitive advantage."
+        ]
+      },
+      {
+        "name": "Purwanto, SE, MM",
+        "course": "Strategic Research Design",
+        "descriptions": [
+          "This course discusses doctoral-level research design oriented towards theoretical contributions and strategic implications. Discussions include conceptual model construction, multi-level hypothesis development, methodological selection techniques (quantitative, qualitative, mixed-method), and empirical testing strategies.",
+          "Executives are trained in the skills of designing elegant research, minimizing grey zones, and internal and external research design validity. Students are facilitated to construct a rigorous, systematic, and efficient research blueprint for research intervention."
+        ]
+      },
+      {
+        "name": "Amelia, SE, MM",
+        "course": "Marketing Innovation Paradigm",
+        "descriptions": [
+          "This course examines the paradigmatic transformation of marketing from transactional to relational marketing, logocentric, to innovation-driven marketing. It also discusses the concepts of customer value, co-creation strategy, and the new marketing logic centered in the disruption era, as well as the strategic marketing context.",
+          "Executives are encouraged to analyze paradoxes, dissonances, and build innovative frameworks in marketing relevant to market dynamics and business environment disruptions. The focus is not only on marketing practices, but also on the constellation of innovation-based marketing and future competitive advantage."
+        ]
+      },
+      {
+        "name": "Nugroho Wibowo, SE, MM.",
+        "course": "Philosophy of Science, Paradigms & Management Innovation",
+        "descriptions": [
+          "This course discusses the artological, epistemological, and axiological foundations in the development of management science from the era of innovation. Discussions are directed at understanding paradigm shifts, the contributions of neo-management thought, and the dialectics of public space and interpretations of these approaches.",
+          "The main focus is how innovation is not only understood as a technical phenomenon, but as a paradigmatic construction that overhauls ontological science frameworks, organizational policies, and changes in management.",
+          "Students are expected to be able to build a new theoretical synthesis and formulate a philosophical position of renewal with logical and argumentative propositions."
+        ]
+      },
+      {
+        "name": "Dr. Manik Kastiringsih, SE, MM.",
+        "course": "Digital Marketing/HR Innovation",
+        "descriptions": [
+          "This course brings the integration of digital marketing strategies with human resource management innovation in the context of modern organizations. Discussions explain digital marketing disruptions (platforms, channels, and customer journeys), the use of analytical data in marketing decision-making, and HR innovation practices such as digital talent management, employee experience, and agile workforce.",
+          "The main focus is how the marketing-HR synergy can improve organizational performance, customer engagement, and technology-based competitive advantage."
+        ]
+      },
+      {
+        "name": "Dr. Choirul Anam, SE, MM.",
+        "course": "Behavioral Neuroscience Innovation",
+        "descriptions": [
+          "This course examines the foundations of behavioral neuroscience and its applications in business and marketing innovation. Discussions include understanding the brain, emotions, decision-making, value perception, and authoritative/subconscious responses to product innovation, brands, and customer experience.",
+          "Students are invited to explore how neuroscience insights can be used to design more human-centric innovation strategies, increase affection or satisfaction, and encourage the adoption of new products and services."
+        ]
+      },
+      {
+        "name": "Dr. Nanang Sutyatmadireja, SH. MH.",
+        "course": "Creative & Ethical Branding Innovation/Business",
+        "descriptions": [
+          "This course emphasizes the development of creative branding innovations grounded in business ethics. Topics include creating brand identity, storytelling, authentic brand experience design, and creating ethical value and social responsibility.",
+          "In addition to creative aspects, students also delve into ethical issues such as communication honesty, brand sustainability, social responsibility, and cultural protection. The goal is for branding innovation to not only be commercially attractive, but also credible and sustainable."
+        ]
+      },
+      {
+        "name": "Dr. Wulansari Kardijanit, S.Sos, SE, MM.",
+        "course": "Academic Writing",
+        "descriptions": [
+          "This course aims to develop students' academic writing skills at the master's qualification level. Materials include journal article structure, writing and citation techniques, composing literature-based arguments, formulating research for novelty, and publication ethics.",
+          "Students are trained to write research proposals, journal articles, and conference papers to international academic standards with the goal of reputable publication in reputable journals."
+        ]
+      }
+    ]
+  }
+}
