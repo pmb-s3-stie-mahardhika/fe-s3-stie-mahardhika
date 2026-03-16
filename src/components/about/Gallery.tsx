@@ -12,7 +12,7 @@ const Gallery = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {images.map((src, index) => (
             <div key={index} className="bg-white p-4 md:p-6 shadow-sm rounded-sm">
-              <div className="border border-gray-300 rounded-sm overflow-hidden aspect-square flex">
+              <div className="border border-gray-200 rounded-sm overflow-hidden aspect-square flex">
                 <img src={src} alt={`Gallery image ${index + 1}`} className="w-full h-full object-cover" />
               </div>
             </div>
