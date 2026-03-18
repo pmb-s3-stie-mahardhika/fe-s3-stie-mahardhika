@@ -119,16 +119,26 @@ export default function FuturisticLogin() {
         email,
         password,
         rememberMe: rememberMe,
-        callbackURL: `/mahasiswa`,
       },
       {
         onRequest: () => {
           toast.loading("Signing in...");
         },
-        onSuccess: () => {
+        onSuccess: (ctx) => {
           toast.dismiss();
           toast.success("Login successful");
-          navigate("/");
+          
+          const userRole = (ctx.data?.user as { role?: string })?.role?.toLowerCase() || "mahasiswa";
+          
+          if (userRole === "admin") {
+            navigate("/admin/dashboard");
+          } else if (userRole === "panitia") {
+            navigate("/panitia/dashboard");
+          } else if (userRole === "pewawancara") {
+            navigate("/pewawancara/dashboard");
+          } else {
+            navigate("/mahasiswa"); // default route
+          }
         },
         onError: (ctx) => {
           toast.dismiss();
@@ -145,11 +155,11 @@ export default function FuturisticLogin() {
   };
 
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-gray-100 via-slate-200 to-gray-50">
+    <div className="relative min-h-screen w-full overflow-hidden bg-linear-to-br from-gray-100 via-slate-200 to-gray-50">
       <canvas ref={canvasRef} className="absolute inset-0 z-0" />
 
       <div
-        className="absolute w-96 h-96 rounded-full blur-3xl opacity-20 bg-gradient-to-r from-cyan-400 to-blue-400 animate-pulse"
+        className="absolute w-96 h-96 rounded-full blur-3xl opacity-20 bg-linear-to-r from-cyan-400 to-blue-400 animate-pulse"
         style={{
           top: "10%",
           left: "15%",
@@ -157,7 +167,7 @@ export default function FuturisticLogin() {
         }}
       />
       <div
-        className="absolute w-80 h-80 rounded-full blur-3xl opacity-15 bg-gradient-to-r from-blue-500 to-cyan-500"
+        className="absolute w-80 h-80 rounded-full blur-3xl opacity-15 bg-linear-to-r from-blue-500 to-cyan-500"
         style={{
           bottom: "15%",
           right: "10%",
@@ -187,7 +197,7 @@ export default function FuturisticLogin() {
               <img src={Logo} alt="Logo" className="h-24 w-auto object-contain" />
             </div>
 
-            <h1 className="text-6xl font-bold leading-tight bg-gradient-to-r from-gray-800 via-cyan-600 to-blue-600 bg-clip-text text-transparent">{t("login.title")}</h1>
+            <h1 className="text-6xl font-bold leading-tight bg-linear-to-r from-gray-800 via-cyan-600 to-blue-600 bg-clip-text text-transparent">{t("login.title")}</h1>
 
             <p className="text-xl text-gray-600 font-light max-w-md">{t("login.description")}</p>
 
@@ -198,11 +208,11 @@ export default function FuturisticLogin() {
           </div>
 
           <div className="relative">
-            <div className="absolute -top-12 -right-12 w-40 h-40 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full blur-3xl opacity-20 animate-pulse" />
-            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full blur-2xl opacity-20" />
+            <div className="absolute -top-12 -right-12 w-40 h-40 bg-linear-to-br from-cyan-400 to-blue-500 rounded-full blur-3xl opacity-20 animate-pulse" />
+            <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-linear-to-br from-blue-400 to-cyan-500 rounded-full blur-2xl opacity-20" />
 
             <div className="relative backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl p-8 shadow-2xl">
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-violet-500/10 to-fuchsia-500/10 blur-2xl -z-10" />
+              <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-violet-500/10 to-fuchsia-500/10 blur-2xl -z-10" />
 
               {/* Back to Home Button */}
               <Link to="/" className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-lg bg-white/80 backdrop-blur-sm border border-gray-200 text-gray-700 hover:bg-white hover:shadow-md transition-all duration-200 group">
@@ -213,7 +223,7 @@ export default function FuturisticLogin() {
               <div className="mb-8">
                 <div className="flex items-center justify-between mb-2">
                   <h2 className="text-3xl font-bold text-gray-800">{t("login.signin.title")}</h2>
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-full bg-linear-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
                     <Lock className="w-6 h-6 text-white" />
                   </div>
                 </div>
@@ -275,13 +285,13 @@ export default function FuturisticLogin() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="relative w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold overflow-hidden group hover:shadow-lg hover:shadow-cyan-500/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="relative w-full py-4 rounded-xl bg-linear-to-r from-cyan-500 to-blue-600 text-white font-semibold overflow-hidden group hover:shadow-lg hover:shadow-cyan-500/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <span className="relative z-10 flex items-center justify-center space-x-2">
                     <span>{t("login.signin.button")}</span>
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </span>
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-linear-to-r from-blue-600 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </button>
               </form>
             </div>

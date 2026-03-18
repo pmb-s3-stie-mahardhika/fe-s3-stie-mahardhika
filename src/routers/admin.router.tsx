@@ -1,5 +1,5 @@
 import { Navigate } from "react-router-dom";
-// import ProtectedRoute from "./protected.router";
+import ProtectedRoute from "./protected.router";
 import DashboardAdmin from "@/pages/admin/dashboard.page";
 import ValidationPage from "@/pages/admin/validation.page";
 import SchedulePage from "@/pages/admin/schedule.page";
@@ -14,41 +14,41 @@ export const adminRouter = [
   {
     path: "/admin/dashboard",
     element: (
-      // <ProtectedRoute roles={["admin"]}>
+      <ProtectedRoute roles={["admin"]}>
         <DashboardAdmin />
-      // </ProtectedRoute>
+      </ProtectedRoute>
     ),
   },
   {
     path: "/admin/validation",
     element: (
-      // <ProtectedRoute roles={["admin"]}>
+      <ProtectedRoute roles={["admin"]}>
         <ValidationPage />
-      // </ProtectedRoute>
+      </ProtectedRoute>
     ),
   },
   {
     path: "/admin/schedule",
     element: (
-      // <ProtectedRoute roles={["admin"]}>
+      <ProtectedRoute roles={["admin"]}>
         <SchedulePage />
-      // </ProtectedRoute>
+      </ProtectedRoute>
     ),
   },
   {
     path: "/admin/selection",
     element: (
-      // <ProtectedRoute roles={["admin"]}>
+      <ProtectedRoute roles={["admin"]}>
         <SelectionPage />
-      // </ProtectedRoute>
+      </ProtectedRoute>
     ),
   },
   {
     path: "/admin/settings",
     element: (
-      // <ProtectedRoute roles={["admin"]}>
+      <ProtectedRoute roles={["admin"]}>
         <AdminPage />
-      // </ProtectedRoute>
+      </ProtectedRoute>
     ),
   },
 ];

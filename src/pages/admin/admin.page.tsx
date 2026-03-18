@@ -10,7 +10,7 @@ type TabKey = "jenis-pendaftaran" | "cms-informasi" | "role-admin";
 const tabs: { key: TabKey; label: string; icon: React.ElementType }[] = [
   { key: "jenis-pendaftaran", label: "Jenis Pendaftaran", icon: Settings },
   { key: "cms-informasi", label: "CMS Informasi", icon: LayoutTemplate },
-  { key: "role-admin", label: "Setting Role Admin", icon: ShieldCheck },
+  { key: "role-admin", label: "Manajemen Pengguna", icon: ShieldCheck },
 ];
 
 const AdminPage = () => {

@@ -18,8 +18,14 @@ const ProtectedRoute = ({ children, roles }: ProtectedRouteProps) => {
 
   // Periksa apakah pengguna memiliki salah satu dari peran yang diizinkan
   const user = session.user as { role?: string };
-  if (roles.length > 0 && user.role && !roles.includes(user.role)) {
-    return <Navigate to="/forbidden" />;
+  console.log("Protected Route Checking Role - User Role:", user.role, "Required Roles:", roles);
+
+  if (roles.length > 0) {
+    // Jika user tidak punya role atau role nya tidak cocok (case-insensitive)
+    if (!user.role || !roles.some((r) => r.toLowerCase() === user.role?.toLowerCase())) {
+      console.warn("Access denied. User role doesn't match.", { userRole: user.role, required: roles });
+      return <Navigate to="/forbidden" />;
+    }
   }
 
   return children;
