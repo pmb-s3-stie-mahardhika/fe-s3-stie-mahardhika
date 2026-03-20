@@ -34,14 +34,14 @@ const RoleSettingAdmin = () => {
       });
       if (res?.data?.users) {
         setUsers(
-           res.data.users.map((u: any) => ({
-             id: u.id,
-             name: u.name,
-             email: u.email,
-             role: u.role || "mahasiswa",
-             createdAt: new Date(u.createdAt),
-             banned: u.banned,
-           }))
+          res.data.users.map((u: any) => ({
+            id: u.id,
+            name: u.name,
+            email: u.email,
+            role: u.role || "mahasiswa",
+            createdAt: new Date(u.createdAt),
+            banned: u.banned,
+          })),
         );
       }
     } catch (error) {
@@ -135,7 +135,10 @@ const RoleSettingAdmin = () => {
           <button onClick={fetchUsers} disabled={isLoading} className="p-2 text-gray-500 hover:text-blue-600 bg-white border border-gray-200 rounded-lg hover:border-blue-200 transition-colors disabled:opacity-50">
             <RefreshCw className={`w-4 h-4 ${isLoading ? "animate-spin" : ""}`} />
           </button>
-          <button onClick={handleAddUserClick} className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors shadow-sm whitespace-nowrap flex-1 md:flex-none justify-center">
+          <button
+            onClick={handleAddUserClick}
+            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors shadow-sm whitespace-nowrap flex-1 md:flex-none justify-center"
+          >
             <UserPlus className="w-4 h-4" />
             Tambah Pengguna
           </button>
@@ -198,9 +201,7 @@ const RoleSettingAdmin = () => {
                 <tr key={user.id} className="border-b border-gray-50 hover:bg-blue-50/30 transition-colors">
                   <td className="p-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-400 text-white flex items-center justify-center font-bold text-xs uppercase shrink-0">
-                        {user.name.charAt(0)}
-                      </div>
+                      <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-400 text-white flex items-center justify-center font-bold text-xs uppercase shrink-0">{user.name.charAt(0)}</div>
                       <span className="font-semibold text-gray-900 text-sm">{user.name}</span>
                     </div>
                   </td>
@@ -208,13 +209,7 @@ const RoleSettingAdmin = () => {
                   <td className="p-4 text-center">
                     <span
                       className={`text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide inline-flex ${
-                        user.role === "admin"
-                          ? "bg-purple-100 text-purple-700"
-                          : user.role === "panitia"
-                          ? "bg-blue-100 text-blue-700"
-                          : user.role === "pewawancara"
-                          ? "bg-teal-100 text-teal-700"
-                          : "bg-gray-100 text-gray-700"
+                        user.role === "admin" ? "bg-purple-100 text-purple-700" : user.role === "panitia" ? "bg-blue-100 text-blue-700" : user.role === "pewawancara" ? "bg-teal-100 text-teal-700" : "bg-gray-100 text-gray-700"
                       }`}
                     >
                       {user.role}
@@ -232,7 +227,11 @@ const RoleSettingAdmin = () => {
                       <button onClick={() => handleEditRole(user)} className="p-1.5 text-blue-600 hover:bg-blue-50 rounded-md transition-colors" title="Ubah Role">
                         <Edit2 className="w-4 h-4" />
                       </button>
-                      <button onClick={() => handleBanUser(user)} className={`p-1.5 rounded-md transition-colors ${user.banned ? "text-green-600 hover:bg-green-50" : "text-yellow-600 hover:bg-yellow-50"}`} title={user.banned ? "Unblock User" : "Block User"}>
+                      <button
+                        onClick={() => handleBanUser(user)}
+                        className={`p-1.5 rounded-md transition-colors ${user.banned ? "text-green-600 hover:bg-green-50" : "text-yellow-600 hover:bg-yellow-50"}`}
+                        title={user.banned ? "Unblock User" : "Block User"}
+                      >
                         <ShieldAlert className="w-4 h-4" />
                       </button>
                     </div>
