@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Search, Save, UserCheck, ShieldAlert, Users, MoreVertical, Edit2, Trash2, UserPlus, RefreshCw, X } from "lucide-react";
+import { Search, Save, UserCheck, ShieldAlert, Users, Edit2, UserPlus, RefreshCw, X } from "lucide-react";
 import { toast } from "sonner";
 import { authClient } from "@/lib/auth-client";
 
